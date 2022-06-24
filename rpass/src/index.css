@@ -1,7 +1,208 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+* {
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --backg: #282828;
+  --backg: rgb(219, 219, 219);
+  --accent: black;
+  --accent2: green;
+  --white: white;
+  --gradient01: rgb(64,254,253);
+  --gradient02: linear-gradient(90deg, rgba(64,254,253,1) 35%, rgba(6,241,254,1) 100%);
+}
+
+body {
+  position: relative;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--backg);
+  
+}
+
+.page1 {
+  position: absolute;
+  z-index: 100;
+}
+
+.dashboard-section {
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0%;
+  height: auto;
+  visibility: hidden;
+}
+
+.login-section {
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0%;
+  height: auto;
+  visibility: visible;
+}
+
+.navigation {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  justify-content: left;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-position: center;
+  user-select: none;
+}
+
+.navigation ul {
+  display: flex;
+  width: 340px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 99;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--accent);
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(32.5px);
+}
+
+.navigation ul li.active1 a .icon {
+  transform: translateY(32.5px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.navigation ul li.active1 a .text {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.indicator {
+  position: absolute;
+  bottom: -45%;
+  width: 70px;
+  height: 70px;
+  background: var(--accent2);
+  background: var(--gradient01);
+  background: var(--gradient02);
+  border-radius: 50%;
+  border: 6px solid var(--backg);
+  transition: 0.5s;
+}
+
+.indicator:before {
+  content: '';
+  position: absolute;
+  bottom: 44%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 10px 0 0 var(--backg);
+}
+
+.indicator:after {
+  content: '';
+  position: absolute;
+  bottom: 44%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 10px 0 0 var(--backg);
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(-1px));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(67.5px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(67.5px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(67.5px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(67.5px * 4));
+}
+
+.navigation ul li:nth-child(1).active1 ~ .indicator {
+  transform: translateX(calc(0));
+}
+
+.navigation ul li:nth-child(2).active1 ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active1 ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+
+.textbox {
+  font-size: medium;
+  height: 30px;
+  border-radius: 10px;
 }
