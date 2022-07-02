@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPass</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="element-dashstart.css" />
+
+    <script defer src="element-dashstart.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </head>
+  <body>
+
+  <div>
+    <div class="navigation">
+        <div>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </div>
+        <ul>
+  
+          <li class="list1 active1">
+            <a onclick="ChangePage(1)">
+              <span class="icon">
+                <ion-icon name="log-in-outline"></ion-icon>
+              </span>
+              <span class="text">Log in</span>
+            </a>
+          </li>
+          
+          <li class="list1">
+            <a onclick="ChangePage(2)">
+              <span class="icon">
+                <ion-icon name="person-add-outline"></ion-icon>
+              </span>
+              <span class="text">Create user</span>
+            </a>
+          </li>
+  
+          <li class="list1">
+            <a onclick="ChangePage(3)">
+              <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="text">Default settings</span>
+            </a>
+          </li>
+          
+          <div class="indicator"></div>
+  
+        </ul>
+      </div>
+      
+      <script>
+        const list1 = document.querySelectorAll('.list1');
+        function activeLink1(){
+          list1.forEach((item) =>
+          item.classList.remove('active1'));
+          this.classList.add('active1');
+        }
+        list1.forEach((item) =>
+        item.addEventListener('click',activeLink1));
+      </script>
+    </div>
+
+  </body>
+</html>

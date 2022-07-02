@@ -3,7 +3,6 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { exit } = require('process');
 
-
 //BUTTONS
 
     //nav tabs
@@ -65,11 +64,13 @@ function InterfaceHideAll(){
     //InterfaceShowSectionLogin(0);
     //setTimeout(() => { Loading(0); }, 0); //1700
     //setTimeout(() => { InterfaceShowLogin(1); InterfaceShowSectionLogin(1); }, 0); //2000
-    window.location.href = "page-loading.html";
-
+    window.location.href = "page-login/page-login.html";
     
 }
 //STARTUP
 function Startup(){
     InterfaceHideAll();
 }
+
+
+
