@@ -1,5 +1,5 @@
 const { fail } = require('assert');
-const { app, BrowserWindow, Menu, MenuItem, Tray } = require('electron');
+const { app, BrowserWindow, Menu, MenuItem, Tray, webFrame } = require('electron');
 const path = require('path');
 const { exit } = require('process');
 const { Interface } = require('readline');
@@ -14,11 +14,12 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 900,
+    height: 700,
     webPreferences:{
       nodeIntegration: true,
       devTools: true,
+      spellcheck: false,
     },
     icon: 'src/graphics/rpassicon.ico',
     autoHideMenuBar: true,
@@ -29,6 +30,7 @@ const createWindow = () => {
   // Open the DevTools.
   //mainWindow.webContents.openDevTools();
   //tray = new Tray('src/graphics/rpassicon.ico')
+  zoomReset();
 };
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -59,23 +61,63 @@ menu.append(new MenuItem({
   label: 'RPass',
   submenu: [
     {
-      role: 'help',
+      role: 'toggleDevTools',
       accelerator: process.platform === 'darwin' ? 'Ctrl+Cmd+I' : 'Ctrl+Shift+I',
       click: () => { BrowserWindow.getFocusedWindow().toggleDevTools(); },
     },
     {
-      role: 'help',
+      type: 'separator',
+    },
+    {
+      role: 'reload',
       accelerator: process.platform === 'darwin' ? 'Ctrl+R' : 'Ctrl+R',
       click: () => { BrowserWindow.getFocusedWindow().reload(); },
     },
     {
-      role: 'help',
-      accelerator: process.platform === 'darwin' ? 'Ctrl+-' : 'Ctrl+-',
-      click: () => { BrowserWindow.getFocusedWindow().setContentSize(100, 200); },
+      type: 'separator',
+    },
+    {
+      role: 'zoomIn',
+      accelerator: process.platform === 'darwin' ? 'Ctrl + =' : 'Ctrl + =',
+      click: () => { zoomIncrease() },
+    },
+    {
+      role: 'resetZoom',
+      accelerator: process.platform === 'darwin' ? 'Ctrl + 0' : 'Ctrl + 0',
+      click: () => { zoomReset() },
+    },
+    {
+      role: 'zoomOut',
+      accelerator: process.platform === 'darwin' ? 'Ctrl + -' : 'Ctrl + -',
+      click: () => { zoomDecrease() },
+    },
+    {
+      role: '',
+      accelerator: process.platform === 'darwin' ? 'Ctrl + 9' : 'Ctrl + 9',
+      click: () => { zoomSet(zoom) },
     },
   ]
 }));
 Menu.setApplicationMenu(menu);
 
+let zoom = 1.0;
 
-//BrowserWindow.getFocusedWindow().minimize(); // minimize
+function zoomSet(zoom) {
+  BrowserWindow.getFocusedWindow().webContents.setZoomFactor(zoom);
+}
+
+function zoomIncrease() {
+  zoom = zoom + 0.1;
+  BrowserWindow.getFocusedWindow().webContents.setZoomFactor(zoom);
+}
+
+function zoomDecrease() {
+  zoom = zoom - 0.1;
+  BrowserWindow.getFocusedWindow().webContents.setZoomFactor(zoom);
+}
+
+function zoomReset() {
+  BrowserWindow.getFocusedWindow().webContents.setZoomFactor(1.0);
+  zoom = 1.0;
+}
+

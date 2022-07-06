@@ -1,0 +1,28 @@
+.title1 {
+    font-size: 32px;
+    margin: 2px;
+}
+
+.title2 {
+    position: relative;
+    font-size: 20px;
+    margin: 2px;
+    left: 40px;
+    top: 5px;
+}
+
+.title3 {
+    position: relative;
+    font-size: 18px;
+    margin: 2px;
+    margin-bottom: 5px;
+    left: 10px;
+    top: 5px;
+}
+
+.title4 {
+    position: relative;
+    font-size: 32px;
+    margin: 2px;
+    left: 42px;
+}

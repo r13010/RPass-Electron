@@ -1,0 +1,130 @@
+.form2 {
+    position: relative;
+    width: 180px;
+    height: 35px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2;
+    font-size: 17px;
+    transition: 0.2;
+}
+
+.buttonLogin, .buttonEulaAgree, .buttonEulaDisagree {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 0px;
+    border-radius: 10px;
+    background: var(--white); 
+    color: var(--accent);
+    outline: none;
+}
+/* LOGIN */
+.buttonLogin:hover, .buttonsettingsdefaultMini:hover, .buttonsettingsdefaultMiniGoBack:hover {
+    background: var(--gradient03);
+    color: var(--white);
+}
+
+.buttonLogin:focus, .buttonsettingsdefaultMini:focus, .buttonsettingsdefaultMiniGoBack:focus {
+    background: var(--gradient01);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}
+/* EULA AGREE */
+.buttonEulaAgree:hover {
+    background: var(--agree);
+    color: var(--white);
+}
+
+.buttonEulaAgree:focus {
+    background: var(--gradientagree);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}
+/* EULA DISAGREE */
+.buttonEulaDisagree:hover {
+    background: var(--deny);
+    color: var(--white);
+}
+
+.buttonEulaDisagree:focus {
+    background: var(--gradientdeny);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}
+/* SETTINGS DEFAULT MINI BUTTONS */
+.form3 {
+    position: relative;
+    width: 400px;
+    height: 35px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2;
+    font-size: 16px;
+    transition: 0.2;
+}
+
+.buttonsettingsdefaultMini, .buttonsettingsdefaultMini2 {
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 0px;
+    border-radius: 10px;
+    background: var(--white); 
+    color: var(--accent);
+    outline: none;
+}
+
+.buttonsettingsdefaultMini2:hover {
+    background: var(--advanced);
+    color: var(--white);
+}
+
+.buttonsettingsdefaultMini2:focus {
+    background: var(--gradientadvanced);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}
+/* TITTLE GO BACK BUTTON */
+
+.form4 {
+    position: relative;
+    width: 400px;
+    height: 37px;
+    margin: 2px;
+    
+    transition: 0.2;
+    font-size: 17px;
+    transition: 0.2;
+}
+
+.buttonsettingsdefaultMiniGoBack {
+    position: absolute;
+    width: 37px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 0px;
+    border-radius: 10px;
+    background: var(--white); 
+    color: var(--accent);
+    outline: none;
+}

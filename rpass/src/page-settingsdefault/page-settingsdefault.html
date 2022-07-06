@@ -7,8 +7,12 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-settingsdefault.css" />
     <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
+    <link rel="stylesheet" href="../others/title.css" />
+    <link rel="stylesheet" href="../others/hr.css" />
+    <link rel="stylesheet" href="../element-button/element-button.css" />
 
     <script defer src="../element-dashstart/element-dashstart.js"></script>
+    <script defer src="page-settingsdefault.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -16,7 +20,59 @@
   </head>
   <body>
     
-    <div class="test">settings default</div>
+    <div class="contents-page2" >
+      <div class="contents2">
+
+        <h1 class="title1" style="z-index: 10;">Default settings</h1>  <hr class="hr1"><br>
+        
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Change language - Schimbă limba</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="language-outline"></ion-icon> </button>
+        </div>
+        
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Enable dark theme</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="moon-outline"></ion-icon> </button>
+        </div>
+
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Software info and licenses</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="information-outline"></ion-icon> </button>
+        </div>
+
+        <hr class="hr1">
+        <h4 class="title3" style="z-index: 10;">Accounts and files</h4>
+
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Import account</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="add-outline"></ion-icon> </button>
+        </div>
+
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Export account as file</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="download-outline"></ion-icon> </button>
+        </div>
+
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Open saves folder</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="folder-open-outline"></ion-icon> </button>
+        </div>
+
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">Open backups folder</h4>
+          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="folder-open-outline"></ion-icon> </button>
+        </div>
+
+        <hr class="hr1">
+        <h4 class="title3" style="z-index: 10;">Advanced</h4>
+        
+        <div class="form3">
+          <h4 class="title2" style="z-index: 10;">See advanced settings</h4>
+          <button type="button1" class="buttonsettingsdefaultMini2" onclick="OpenSettingsadvanced()"> <ion-icon name="chevron-forward-outline"></ion-icon> </button>
+        </div>
+
+      </div>
+    </div>
 
   </body>
   <body1>

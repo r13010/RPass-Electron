@@ -1,7 +1,7 @@
 let distroyed = 0;
 function ChangePage(pageNumber) {
     distroyed++;
-    setTimeout(() => { 
+    setTimeout(() => {
         distroyed--;
         if (distroyed == 0) {
             //change tab

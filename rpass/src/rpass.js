@@ -1,4 +1,4 @@
-const { fail } = require('assert');
+/*const { fail } = require('assert');
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { exit } = require('process');
@@ -55,7 +55,7 @@ function InterfaceShowSectionLogin(x) {
     } else if (x == 0) {
         loginsection.style.opacity = "0";
     }
-}
+}*/
 //INTERFACE HIDE ALL
 function InterfaceHideAll(){
     //Loading(1);
@@ -64,13 +64,14 @@ function InterfaceHideAll(){
     //InterfaceShowSectionLogin(0);
     //setTimeout(() => { Loading(0); }, 0); //1700
     //setTimeout(() => { InterfaceShowLogin(1); InterfaceShowSectionLogin(1); }, 0); //2000
+    //window.location.href = "element-textbox/element-textbox.html";
     window.location.href = "page-login/page-login.html";
     
-}
+}/*
 //STARTUP
 function Startup(){
     InterfaceHideAll();
 }
-
+*/
 
 
