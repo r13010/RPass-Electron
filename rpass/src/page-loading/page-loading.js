@@ -1,4 +1,4 @@
-function InterfaceShowLoading(x) {
+function Interface_Page_Loading(x) {
 
     const backgroundbox = document.querySelector(".backgroundbox");
     const text1 = document.querySelector(".text1");
@@ -29,4 +29,13 @@ function InterfaceShowLoading(x) {
         }, 500);
 
     }    
+}
+
+function LoadingTestAnim() {
+    setTimeout(() => { 
+        Interface_Page_Loading(0);
+        setTimeout(() => { 
+            window.location.href = "../page-login/page-login.html";
+         }, 1500);
+     }, 4000);
 }

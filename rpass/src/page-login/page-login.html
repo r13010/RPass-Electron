@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="../others/title.css" />
     <link rel="stylesheet" href="../others/hr.css" />
     <link rel="stylesheet" href="../element-textbox/element-textbox.css" />
-    <link rel="stylesheet" href="../element-button/element-button.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
 
     <script defer src="../element-dashstart/element-dashstart.js"></script>
+    <script defer src="page-login.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   </head>
-  <body>
+  <body onload="Interface_Page_Login(1)">
     
     <div class="contents-page1">
       <div class="contents1">
 
-        <h1 class="title1" style="z-index: 10;">Login</h1> <hr class="hr1"><br>
+        <h1 class="title1" style="z-index: 10; text-align: center;">Login</h1> <br>
 
         <div class="form1" style="z-index: 9;">
           <input class="form-input" type="text" id="username" autocomplete="off" placeholder=" ">
@@ -35,8 +36,8 @@
           <label class="form-label">Password</label>
         </div>
 
-        <div class="form2" style="z-index: 7;">
-          <button type="button1" class="buttonLogin" onclick="test()">Log in</button>
+        <div class="elem-btn-ClassicRBlue-FORM" style="z-index: 7;">
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="Login()" id="button--login-login">Log in</button>
         </div>
 
       </div>
@@ -53,7 +54,7 @@
           <ul>
     
             <li class="list1 active1">
-              <a onclick="ChangePage(1)">
+              <a onclick="ChangePage(1);Interface_Page_Login(0);">
                 <span class="icon">
                   <ion-icon name="log-in-outline"></ion-icon>
                 </span>
@@ -62,7 +63,7 @@
             </li>
             
             <li class="list1">
-              <a onclick="ChangePage(2)">
+              <a onclick="ChangePage(2);Interface_Page_Login(0);">
                 <span class="icon">
                   <ion-icon name="person-add-outline"></ion-icon>
                 </span>
@@ -71,7 +72,7 @@
             </li>
     
             <li class="list1">
-              <a onclick="ChangePage(3)">
+              <a onclick="ChangePage(3);Interface_Page_Login(0);">
                 <span class="icon">
                   <ion-icon name="settings-outline"></ion-icon>
                 </span>

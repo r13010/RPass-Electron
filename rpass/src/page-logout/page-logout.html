@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPass</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="page-logout.css" />
+    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
+    <link rel="stylesheet" href="../others/title.css" />
+    <link rel="stylesheet" href="../others/hr.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-BigNRound.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-BigNRoundRed.css" />
+
+    <script defer src="../element-dashboard/element-dashboard.js"></script>
+    <script defer src="page-logout.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </head>
+  <body onload="Interface_Page_Logout(1)">
+    
+    <div class="contents-page2">
+      <div class="contents2">
+
+        <h1 class="title1" style="z-index: 10; text-align: center;">Log out</h1> <br>
+
+      </div>
+
+      <div class="contents21">
+
+        <div class="elem-btn-BigNRound-FORM">
+          <button class="elem-btn-BigNRound-BUTT" onclick="Save()" id="button--logout-save">
+            <ion-icon class="elem-btn-BigNRound-ICON" name="document-attach-outline"></ion-icon> <br>
+            <div class="elem-btn-BigNRound-LABEL">Save</div>
+          </button>
+        </div>
+
+        <div class="elem-btn-BigNRound-FORM">
+          <button class="elem-btn-BigNRound-BUTT" onclick="SaveAndLogout()" id="button--logout-save-and-logout">
+            <ion-icon class="elem-btn-BigNRound-ICON" name="document-text-outline"></ion-icon> <br>
+            <div class="elem-btn-BigNRound-LABEL">Save and <br> log out</div>
+          </button>
+        </div>
+
+        <div class="elem-btn-BigNRoundRed-FORM">
+          <button class="elem-btn-BigNRoundRed-BUTT" onclick="Logout()" id="button--logout-logout">
+            <ion-icon class="elem-btn-BigNRoundRed-ICON" name="log-out-outline"></ion-icon> <br> 
+            <div class="elem-btn-BigNRoundRed-LABEL">Log out</div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+  <body1>
+    
+    <div class="navigation">
+        <div>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </div>
+        <ul>
+    
+          <li class="list">
+            <a onclick="ChangePage(1);Interface_Page_Logout(0);">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          
+          <li class="list">
+            <a onclick="ChangePage(2);Interface_Page_Logout(0);">
+              <span class="icon">
+                <ion-icon name="add-outline"></ion-icon>
+              </span>
+              <span class="text">Add</span>
+            </a>
+          </li>
+    
+          <li class="list">
+            <a onclick="ChangePage(3);Interface_Page_Logout(0);">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+    
+          <li class="list">
+            <a onclick="ChangePage(4);Interface_Page_Logout(0);">
+              <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="text">User settings</span>
+            </a>
+          </li>
+    
+          <li class="list active">
+            <a onclick="ChangePage(5);Interface_Page_Logout(0);">
+              <span class="icon">
+                <ion-icon name="log-out-outline"></ion-icon>
+              </span>
+              <span class="text">Log out</span>
+            </a>
+          </li>
+          
+          <div class="indicator"></div>
+    
+        </ul>
+      </div>
+      
+      <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+          list.forEach((item) =>
+          item.classList.remove('active'));
+          this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+      </script>
+    </div>
+
+  </body1>
+</html>

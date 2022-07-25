@@ -1,5 +1,5 @@
 const { fail } = require('assert');
-const { app, BrowserWindow, Menu, MenuItem, Tray, webFrame } = require('electron');
+const { app, BrowserWindow, Menu, MenuItem, Tray, webFrame, shell } = require('electron');
 const path = require('path');
 const { exit } = require('process');
 const { Interface } = require('readline');
@@ -31,6 +31,7 @@ const createWindow = () => {
   //mainWindow.webContents.openDevTools();
   //tray = new Tray('src/graphics/rpassicon.ico')
   zoomReset();
+  
 };
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

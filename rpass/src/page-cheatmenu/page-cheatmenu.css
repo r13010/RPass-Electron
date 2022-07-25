@@ -1,0 +1,17 @@
+.contents-page2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    
+}
+
+.contents2 {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}

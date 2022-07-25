@@ -1,0 +1,47 @@
+.elem-btn-MiniWithLabel2-FORM {
+    position: relative;
+    width: 400px;
+    height: 35px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.elem-btn-MiniWithLabel2-LABEL {
+    position: relative;
+    font-size: 20px;
+    margin: 2px;
+    left: 40px;
+    top: 5px;
+}
+
+.elem-btn-MiniWithLabel2-BUTT {
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 0px;
+    border-radius: 10px;
+    background: var(--white); 
+    color: var(--accent);
+    outline: none;
+    transition: 0.2s;
+}
+
+.elem-btn-MiniWithLabel2-BUTT:hover {
+    background: var(--advanced);
+    color: var(--white);
+}
+
+.elem-btn-MiniWithLabel2-BUTT:focus {
+    background: var(--gradientadvanced);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}

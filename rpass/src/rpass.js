@@ -65,7 +65,7 @@ function InterfaceHideAll(){
     //setTimeout(() => { Loading(0); }, 0); //1700
     //setTimeout(() => { InterfaceShowLogin(1); InterfaceShowSectionLogin(1); }, 0); //2000
     //window.location.href = "element-textbox/element-textbox.html";
-    window.location.href = "page-login/page-login.html";
+    window.location.href = "page-cheatmenu/page-cheatmenu.html";
     
 }/*
 //STARTUP
@@ -75,3 +75,16 @@ function Startup(){
 */
 
 
+function Interface_Theme(x) {
+    if (x == 0) { // default: light
+
+
+
+    } else if (x == 1) { // dark
+        localStorage.setItem('--backg', 'black');
+        
+
+    }
+
+    document.documentElement.style.setProperty('--backg', localStorage.getItem('--backg'));
+}

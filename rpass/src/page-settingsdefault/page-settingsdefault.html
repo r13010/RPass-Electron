@@ -9,66 +9,66 @@
     <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
     <link rel="stylesheet" href="../others/title.css" />
     <link rel="stylesheet" href="../others/hr.css" />
-    <link rel="stylesheet" href="../element-button/element-button.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel2.css" />
 
     <script defer src="../element-dashstart/element-dashstart.js"></script>
     <script defer src="page-settingsdefault.js"></script>
+    <script defer src="page-settingsdefault-commands.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   </head>
-  <body>
+  <body onload="Interface_Page_SettingsDefault(1)">
     
     <div class="contents-page2" >
       <div class="contents2">
 
-        <h1 class="title1" style="z-index: 10;">Default settings</h1>  <hr class="hr1"><br>
+        <h1 class="title1" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Default</h1> <br>
         
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Change language - Schimbă limba</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="language-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Default language (when you open RPass)</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsDefaultLanguage()" id="button--settingsdefault-deflang"> <ion-icon name="language-outline"></ion-icon> </button>
         </div>
         
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Enable dark theme</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="moon-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Default theme (when you open RPass)</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsDefaultTheme()" id="button--settingsdefault-deftheme"> <ion-icon name="moon-outline"></ion-icon> </button>
         </div>
 
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Software info and licenses</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="information-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Software info and licenses</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsAbout()" id="button--settingsdefault-about"> <ion-icon name="information-outline"></ion-icon> </button>
         </div>
 
-        <hr class="hr1">
         <h4 class="title3" style="z-index: 10;">Accounts and files</h4>
 
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Import account</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="add-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Import account</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsImport()" id="button--settingsdefault-import"> <ion-icon name="add-outline"></ion-icon> </button>
         </div>
 
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Export account as file</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="download-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Export account as file</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsExport()" id="button--settingsdefault-export"> <ion-icon name="download-outline"></ion-icon> </button>
         </div>
 
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Open saves folder</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="folder-open-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Open saves folder</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsSaves()" id="button--settingsdefault-opensaves"> <ion-icon name="folder-open-outline"></ion-icon> </button>
         </div>
 
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">Open backups folder</h4>
-          <button type="button1" class="buttonsettingsdefaultMini" onclick="test()"> <ion-icon name="folder-open-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel-FORM">
+          <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Open backups folder</h4>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsBackups()" id="button--settingsdefault-openbackups"> <ion-icon name="folder-open-outline"></ion-icon> </button>
         </div>
 
-        <hr class="hr1">
         <h4 class="title3" style="z-index: 10;">Advanced</h4>
         
-        <div class="form3">
-          <h4 class="title2" style="z-index: 10;">See advanced settings</h4>
-          <button type="button1" class="buttonsettingsdefaultMini2" onclick="OpenSettingsadvanced()"> <ion-icon name="chevron-forward-outline"></ion-icon> </button>
+        <div class="elem-btn-MiniWithLabel2-FORM">
+          <h4 class="elem-btn-MiniWithLabel2-LABEL" style="z-index: 10;">See advanced settings</h4>
+          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="OpenSettingsAdvanced()" id="button--settingsdefault-advanced"> <ion-icon name="chevron-forward-outline"></ion-icon> </button>
         </div>
 
       </div>
@@ -83,7 +83,7 @@
           <ul>
     
             <li class="list1">
-              <a onclick="ChangePage(1)">
+              <a onclick="ChangePage(1); Interface_Page_SettingsDefault(0);">
                 <span class="icon">
                   <ion-icon name="log-in-outline"></ion-icon>
                 </span>
@@ -92,7 +92,7 @@
             </li>
             
             <li class="list1">
-              <a onclick="ChangePage(2)">
+              <a onclick="ChangePage(2); Interface_Page_SettingsDefault(0);">
                 <span class="icon">
                   <ion-icon name="person-add-outline"></ion-icon>
                 </span>
@@ -101,7 +101,7 @@
             </li>
     
             <li class="list1 active1">
-              <a onclick="ChangePage(3)">
+              <a onclick="ChangePage(3); Interface_Page_SettingsDefault(0);">
                 <span class="icon">
                   <ion-icon name="settings-outline"></ion-icon>
                 </span>

@@ -1,0 +1,46 @@
+.elem-btn-MiniGoBack-FORM {
+    position: relative;
+    width: 500px;
+    height: 37px;
+    margin: 2px;
+    
+    transition: 0.2;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.elem-btn-MiniGoBack-LABEL {
+    position: relative;
+    font-size: 32px;
+    margin: 2px;
+    left: 42px;
+}
+
+.elem-btn-MiniGoBack-BUTT {
+    position: absolute;
+    width: 37px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 0px;
+    border-radius: 10px;
+    background: var(--white); 
+    color: var(--accent);
+    outline: none;
+    transition: 0.2s;
+}
+
+.elem-btn-MiniGoBack-BUTT:hover {
+    background: var(--gradient03);
+    color: var(--white);
+}
+
+.elem-btn-MiniGoBack-BUTT:focus {
+    background: var(--gradient01);
+    color: var(--accent);
+    box-shadow: 1px 1px 20px -6px var(--backg1);
+}

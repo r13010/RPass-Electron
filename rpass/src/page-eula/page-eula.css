@@ -5,7 +5,8 @@
     height: 100%;
     color: var(--backg1);
     user-select: none;
-    
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .contents2 {
@@ -22,11 +23,14 @@
     height: 100%;
     color: var(--backg1);
     user-select: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .contents21 {
     position: absolute;
     display: flex;
     bottom: 0;
-    left: 4%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
