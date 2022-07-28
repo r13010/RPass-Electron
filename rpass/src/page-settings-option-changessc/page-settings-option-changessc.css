@@ -1,0 +1,22 @@
+.contents-page2 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: var(--backg1);
+    user-select: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contents2 {
+    position: absolute;
+    top: 110px;
+    left: 4%;
+    margin-right: 4%;
+}
+
+.dflex {
+    position: relative;
+    display: flex;
+}

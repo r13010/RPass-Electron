@@ -1,0 +1,19 @@
+.element-warning-FORM {
+    position: relative;
+    display: flex;
+    font-size: 18px;
+}
+
+.element-warning-BADGE {
+    position: relative;
+    top: 0px;
+    font-size: 30px;
+}
+
+.element-warning-TEXT {
+    position: relative;
+    top: 5px; 
+    margin-bottom: 5px;
+    left: 5px; 
+    font-weight: bold;
+}

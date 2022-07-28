@@ -1,0 +1,76 @@
+.elem-txtbx-Long-FORM {
+    position: relative;
+    width: 400px;
+    height: 35px;
+    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2;
+    font-size: 17px;
+}
+
+.elem-txtbx-Long-FORM .elem-txtbx-Long-TEXT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: inherit;
+    font-size: inherit;
+    
+    border: 2px solid var(--backg1);
+    border-radius: 10px;
+    padding: 5px;
+    background: transparent; 
+    color: var(--accent);
+    outline: none;
+    z-index: 10;
+    
+    transition: 0.2s;
+}
+
+.elem-txtbx-Long-FORM .elem-txtbx-Long-TEXT:hover {
+    border-color: var(--gradient03);
+}
+
+.elem-txtbx-Long-FORM .elem-txtbx-Long-TEXT:focus {
+    border-color: var(--gradient01);
+    box-shadow: 1px 7px 20px -10px var(--backg1);
+}
+
+.elem-txtbx-Long-FORM .elem-txtbx-Long-LABEL {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    padding: 0px 0px;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--accent);
+    background-color: transparent;
+    
+    z-index: 9;
+
+    transition: 0.2s;
+}
+
+.elem-txtbx-Long-TEXT:focus ~ .elem-txtbx-Long-LABEL,
+.elem-txtbx-Long-TEXT:not(:placeholder-shown).elem-txtbx-Long-TEXT:focus ~ .elem-txtbx-Long-LABEL {
+    top: -9px;
+    left: 22px;
+    font-size: 14.5px;
+    background-color: var(--backg); /* var(--backg) */
+    color: var(--gradient01);
+    padding: 0px 10px;
+    z-index: 11;
+}
+
+.elem-txtbx-Long-TEXT:not(:placeholder-shown).elem-txtbx-Long-TEXT:not(focus) ~ .elem-txtbx-Long-LABEL {
+    top: -9px;
+    left: 22px;
+    font-size: 14.5px;
+    background-color: var(--backg);
+    color: var(--backg1);
+    padding: 0px 10px;
+    z-index: 11;
+}

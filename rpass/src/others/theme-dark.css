@@ -1,0 +1,18 @@
+:root {
+    --backg1: rgb(235, 235, 235);
+    --backg: black;
+    --accent: white;
+    --accent2: green;
+    --white: #282828;
+    --gradient01: rgb(64, 240, 240);
+    --gradient02: linear-gradient(90deg, #282828 35%, #282828 100%);
+    --gradient03: rgb(30, 200, 200);
+  
+    --agree: rgb(0, 100, 0);
+    --deny: rgb(129, 0, 0);
+    --gradientagree: linear-gradient(90deg, rgb(14, 255, 14) 35%, rgb(0, 202, 0) 100%);
+    --gradientdeny: linear-gradient(90deg, rgb(255, 16, 16) 35%, rgb(255, 48, 48) 100%);
+  
+    --advanced: rgb(78, 0, 100);
+    --gradientadvanced: linear-gradient(90deg, rgb(196, 58, 235) 35%,rgb(203, 122, 225) 100%);
+}

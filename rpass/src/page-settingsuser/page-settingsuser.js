@@ -66,6 +66,10 @@ function OpenSettingsAccountinfo() {
     button__settingsuser_accountinfo.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsUser(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-accountinfo/page-settings-option-accountinfo.html";
+     }, 500);
 }
 
 function OpenSettingsChangeUsername() {
@@ -75,6 +79,10 @@ function OpenSettingsChangeUsername() {
     button__settingsuser_changeUsername.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsUser(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-changeusername/page-settings-option-changeusername.html";
+     }, 500);
 }
 
 function OpenSettingsChangePassword() {
@@ -84,6 +92,10 @@ function OpenSettingsChangePassword() {
     button__settingsuser_changePassword.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsUser(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-changepass/page-settings-option-changepass.html";
+     }, 500);
 }
 
 function OpenSettingsChangeExport2() {
@@ -93,6 +105,10 @@ function OpenSettingsChangeExport2() {
     button__settingsuser_export2.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsUser(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-export2/page-settings-option-export2.html";
+     }, 500);
 }
 
 function OpenSettingsAccountDelete() {
@@ -102,4 +118,8 @@ function OpenSettingsAccountDelete() {
     button__settingsuser_accountDelete.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsUser(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-accountdelete/page-settings-option-accountdelete.html";
+     }, 500);
 }

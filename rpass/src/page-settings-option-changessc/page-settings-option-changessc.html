@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPass</title>
+
+    <link rel="stylesheet" href="page-settings-option-changessc.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
+    <link rel="stylesheet" href="../element-textbox/elem-txtbx-Square.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-MiniGoBack.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
+    <link rel="stylesheet" href="../others/elem-title-Sub.css" />    
+
+    <script defer src="../element-dashstart/element-dashstart.js"></script>
+    <script defer src="page-settings-option-changessc.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+  </head>
+  <body onload="Interface_Page_SettingsAdvanced(1)">
+    
+    <div class="contents-page2" >
+      <div class="contents2">
+
+        <div class="elem-btn-MiniGoBack-FORM">
+          <h4 class="elem-btn-MiniGoBack-LABEL" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Advanced <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Change SSC</h4>
+          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()" id="button--goback"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
+        </div> <br>
+
+        <h4 class="elem-title-Sub" style="z-index: 10;">Change the SSC that is used to decrypt globally</h4> <br>
+
+        <div class="dflex">
+
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press1()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-1" autocomplete="off" placeholder=" ">
+          </div>
+  
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press2()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-2" autocomplete="off" placeholder=" ">
+          </div>
+  
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press3()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-3" autocomplete="off" placeholder=" ">
+          </div>
+  
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press4()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-4" autocomplete="off" placeholder=" ">
+          </div>
+  
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press5()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-5" autocomplete="off" placeholder=" ">
+          </div>
+
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press6()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-6" autocomplete="off" placeholder=" ">
+          </div>
+
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press7()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-7" autocomplete="off" placeholder=" ">
+          </div>
+
+          <div class="elem-txtbx-Square-FORM" style="z-index: 9;">
+            <input class="elem-txtbx-Square-TEXT" onkeyup="Press8()" type="number" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="changessc--ssc-8" autocomplete="off" placeholder=" ">
+          </div>
+
+        </div>
+        
+        <div class="elem-btn-ClassicRBlue-FORM">
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="ChangeSSC()" id="button--changessc-change">Change SSC</button>
+        </div>
+
+        <div class="elem-btn-ClassicRBlue-FORM">
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="Clear()" id="button--changessc-clear">Clear</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+  <body1>
+    
+    <div>
+      <div class="navigation">
+          <div>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </div>
+          <ul>
+    
+            <li class="list1">
+              <a onclick="ChangePage(1); Interface_Page_SettingsAdvanced(0);">
+                <span class="icon">
+                  <ion-icon name="log-in-outline"></ion-icon>
+                </span>
+                <span class="text">Log in</span>
+              </a>
+            </li>
+            
+            <li class="list1">
+              <a onclick="ChangePage(2); Interface_Page_SettingsAdvanced(0);">
+                <span class="icon">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </span>
+                <span class="text">Create user</span>
+              </a>
+            </li>
+    
+            <li class="list1 active1">
+              <a onclick="ChangePage(3); Interface_Page_SettingsAdvanced(0);">
+                <span class="icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span class="text">Change SSC</span>
+              </a>
+            </li>
+            
+            <div class="indicator"></div>
+    
+          </ul>
+        </div>
+        
+        <script>
+          const list1 = document.querySelectorAll('.list1');
+          function activeLink1(){
+            list1.forEach((item) =>
+            item.classList.remove('active1'));
+            this.classList.add('active1');
+          }
+          list1.forEach((item) =>
+          item.addEventListener('click',activeLink1));
+        </script>
+      </div>  
+
+  </body1>
+</html>

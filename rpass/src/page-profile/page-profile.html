@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-profile.css" />
-    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
-    <link rel="stylesheet" href="../others/title.css" />
-    <link rel="stylesheet" href="../others/hr.css" />
-    <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
+    <link rel="stylesheet" href="../others/elem-title-Big.css" />
+    <link rel="stylesheet" href="../others/element-warning.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
 
     <script defer src="../element-dashboard/element-dashboard.js"></script>
@@ -17,6 +17,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
   <body onload="Interface_Page_Profile(1)">
@@ -24,12 +25,16 @@
     <div class="contents-page2">
       <div class="contents2">
 
-        <h1 class="title1" style="z-index: 10; text-align: center;">Profile</h1> <br>
+        <h1 class="elem-title-Big" style="text-align: center;">Profile</h1>
+        
+        <div class="element-warning-FORM">
+          <div class="element-warning-BADGE"><ion-icon name="warning-outline"></ion-icon></div>
+          <div class="element-warning-TEXT">This page contains sensitive data</div>
+        </div>
 
       </div>
 
       <div class="contents21">
-
         <div class="profile">
 
           <div class="profile-pic-base">
@@ -42,15 +47,12 @@
             <h2 class="title2" style="z-index: 10;" id="userinfo--stored-passwords" >0 stored passwords</h2>
             <br>
             <h4 class="title2" style="z-index: 10;">Joined: 13.01.2022 10:00</h4>
-            <h4 class="title2" style="z-index: 10;">Email: Not provided</h4>
+            <h4 class="title2" style="z-index: 10;">Last login: 13.01.2022 10:00</h4>
             
 
           </div>
 
         </div>
-
-        <h4 class="last-login-text">Last login: 13.01.2022 10:00</h4>
-        
       </div>
 
       <div class="contents22">

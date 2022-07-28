@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-settingsdefault.css" />
-    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
-    <link rel="stylesheet" href="../others/title.css" />
-    <link rel="stylesheet" href="../others/hr.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
+    <link rel="stylesheet" href="../others/elem-title-Big.css" />
+    <link rel="stylesheet" href="../others/elem-title-Sub.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel2.css" />
 
     <script defer src="../element-dashstart/element-dashstart.js"></script>
     <script defer src="page-settingsdefault.js"></script>
-    <script defer src="page-settingsdefault-commands.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
   <body onload="Interface_Page_SettingsDefault(1)">
@@ -25,7 +26,7 @@
     <div class="contents-page2" >
       <div class="contents2">
 
-        <h1 class="title1" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Default</h1> <br>
+        <div class="elem-title-Big">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Default</div> <br>
         
         <div class="elem-btn-MiniWithLabel-FORM">
           <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Default language (when you open RPass)</h4>
@@ -42,7 +43,7 @@
           <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsAbout()" id="button--settingsdefault-about"> <ion-icon name="information-outline"></ion-icon> </button>
         </div>
 
-        <h4 class="title3" style="z-index: 10;">Accounts and files</h4>
+        <h4 class="elem-title-Sub" style="z-index: 10;">Accounts and files</h4>
 
         <div class="elem-btn-MiniWithLabel-FORM">
           <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Import account</h4>
@@ -64,7 +65,7 @@
           <button class="elem-btn-MiniWithLabel-BUTT" onclick="OpenSettingsBackups()" id="button--settingsdefault-openbackups"> <ion-icon name="folder-open-outline"></ion-icon> </button>
         </div>
 
-        <h4 class="title3" style="z-index: 10;">Advanced</h4>
+        <h4 class="elem-title-Sub" style="z-index: 10;">Advanced</h4>
         
         <div class="elem-btn-MiniWithLabel2-FORM">
           <h4 class="elem-btn-MiniWithLabel2-LABEL" style="z-index: 10;">See advanced settings</h4>

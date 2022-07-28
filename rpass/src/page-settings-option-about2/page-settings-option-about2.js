@@ -1,4 +1,10 @@
 function GoBack() {
+    // Lose focus
+    setTimeout(() => {
+    const button__goback = document.querySelector('#button--goback');
+    button__goback.blur();
+    }, 200);
+    // Function
     Interface_Page_SettingsUser(0);
     setTimeout(() => { 
         window.location.href = "../page-settingsuser/page-settingsuser.html";

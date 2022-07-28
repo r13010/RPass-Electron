@@ -73,18 +73,3 @@ function Startup(){
     InterfaceHideAll();
 }
 */
-
-
-function Interface_Theme(x) {
-    if (x == 0) { // default: light
-
-
-
-    } else if (x == 1) { // dark
-        localStorage.setItem('--backg', 'black');
-        
-
-    }
-
-    document.documentElement.style.setProperty('--backg', localStorage.getItem('--backg'));
-}

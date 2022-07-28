@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-settingsadvanced.css" />
-    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
-    <link rel="stylesheet" href="../others/title.css" />
-    <link rel="stylesheet" href="../others/hr.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
     <link rel="stylesheet" href="../element-button/elem-btn-MiniGoBack.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniWithLabel2.css" />    
@@ -18,6 +17,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
   <body onload="Interface_Page_SettingsAdvanced(1)">
@@ -27,27 +27,27 @@
 
         <div class="elem-btn-MiniGoBack-FORM">
           <h4 class="elem-btn-MiniGoBack-LABEL" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Advanced</h4>
-          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()" id="button--goback"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
         </div> <br>
 
         <div class="elem-btn-MiniWithLabel2-FORM">
           <h4 class="elem-btn-MiniWithLabel2-LABEL" style="z-index: 10;">Reset to default SSC</h4>
-          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="test()"> <ion-icon name="refresh-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="OptionResetSSC()" id="button--settingsadvanced-resetssc"> <ion-icon name="refresh-outline"></ion-icon> </button>
         </div>
 
         <div class="elem-btn-MiniWithLabel2-FORM">
           <h4 class="elem-btn-MiniWithLabel2-LABEL" style="z-index: 10;">Change default SSC</h4>
-          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="test()"> <ion-icon name="keypad-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="OptionChangeSSC()" id="button--settingsadvanced-changessc"> <ion-icon name="keypad-outline"></ion-icon> </button>
         </div>
 
         <div class="elem-btn-MiniWithLabel-FORM">
           <h4 class="elem-btn-MiniWithLabel-LABEL" style="z-index: 10;">Local app reset (not account data)</h4>
-          <button class="elem-btn-MiniWithLabel-BUTT" onclick="test()"> <ion-icon name="reload-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniWithLabel-BUTT" onclick="OptionLocalReset()" id="button--settingsadvanced-localreset"> <ion-icon name="reload-outline"></ion-icon> </button>
         </div>
 
         <div class="elem-btn-MiniWithLabel2-FORM">
           <h4 class="elem-btn-MiniWithLabel2-LABEL" style="z-index: 10;">Open terminal</h4>
-          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="test()"> <ion-icon name="terminal-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniWithLabel2-BUTT" onclick="OptionTerminal()" id="button--settingsadvanced-terminal"> <ion-icon name="terminal-outline"></ion-icon> </button>
         </div>
 
       </div>

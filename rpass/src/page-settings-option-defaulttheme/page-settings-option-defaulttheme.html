@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-settings-option-defaulttheme.css" />
-    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
-    <link rel="stylesheet" href="../others/title.css" />
-    <link rel="stylesheet" href="../others/hr.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
+    <link rel="stylesheet" href="../others/elem-title-Sub.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniGoBack.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
 
@@ -17,6 +17,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
   <body onload="Interface_Page_SettingsAdvanced(1)">
@@ -26,17 +27,17 @@
 
         <div class="elem-btn-MiniGoBack-FORM">
           <h4 class="elem-btn-MiniGoBack-LABEL" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Default <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Theme</h4>
-          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()" id="goback"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
         </div> <br>
 
-        <h4 class="title3" style="z-index: 10;">Select one of the themes from the list below:</h4> <br>
+        <h4 class="elem-title-Sub" style="z-index: 10;">Select one of the themes from the list below:</h4> <br>
 
         <div class="elem-btn-ClassicRBlue-FORM">
-          <button class="elem-btn-ClassicRBlue-BUTT" onclick="test()">Light</button>
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="OptionDefaultLight()" id="button--defaulttheme-light">Light</button>
         </div>
 
         <div class="elem-btn-ClassicRBlue-FORM">
-          <button class="elem-btn-ClassicRBlue-BUTT" onclick="test()">Dark</button>
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="OptionDefaultDark()" id="button--defaulttheme-dark">Dark</button>
         </div>
 
       </div>

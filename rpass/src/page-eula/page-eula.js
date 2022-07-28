@@ -1,12 +1,9 @@
 function Interface_Page_Eula(x) {
     const page_eula = document.querySelector(".contents-page2");
-    const page_eula2 = document.querySelector(".contents-page21");
         if (x == 1) {
             page_eula.style.opacity = "1";
-            page_eula2.style.opacity = "1";
         } else if (x == 0) {
             page_eula.style.opacity = "0";
-            page_eula2.style.opacity = "0";
         }
 }
 

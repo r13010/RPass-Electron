@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="page-settings-option-export.css" />
-    <link rel="stylesheet" href="../element-dashstart/element-dashstart.css" />
-    <link rel="stylesheet" href="../others/title.css" />
-    <link rel="stylesheet" href="../others/hr.css" />
-    <link rel="stylesheet" href="../element-textbox/element-textbox.css" />
+    <link rel="stylesheet" href="../others/element-dash.css" />
+    <link rel="stylesheet" href="../others/theme-light.css" />
+
+    <link rel="stylesheet" href="../others/elem-title-Sub.css" />
+    <link rel="stylesheet" href="../element-textbox/elem-txtbx-Classic.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-MiniGoBack.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
 
@@ -18,6 +18,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
   <body onload="Interface_Page_SettingsAdvanced(1)">
@@ -27,18 +28,18 @@
 
         <div class="elem-btn-MiniGoBack-FORM">
           <h4 class="elem-btn-MiniGoBack-LABEL" style="z-index: 10;">Settings <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Default <ion-icon name="chevron-forward-outline" style="font-size: 20px;"></ion-icon> Export</h4>
-          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
+          <button class="elem-btn-MiniGoBack-BUTT" onclick="GoBack()" id="button--goback"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
         </div> <br>
 
         <h4 class="title3" style="z-index: 10;">Export an existing account from RPass</h4> <br>
 
-        <div class="form1" style="z-index: 9;">
-          <input class="form-input" type="text" id="username" autocomplete="off" placeholder=" ">
-          <label class="form-label">Username</label>
+        <div class="elem-txtbx-Classic-FORM" style="z-index: 9;">
+          <input class="elem-txtbx-Classic-TEXT" type="text" id="username" autocomplete="off" placeholder=" ">
+          <label class="elem-txtbx-Classic-LABEL">Username</label>
         </div>
 
         <div class="elem-btn-ClassicRBlue-FORM">
-          <button class="elem-btn-ClassicRBlue-BUTT" onclick="test()">Export</button>
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="AccountExport()" id="button--accountexport-export">Export</button>
         </div>
 
       </div>
