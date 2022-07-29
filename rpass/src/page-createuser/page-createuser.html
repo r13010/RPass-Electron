@@ -4,52 +4,54 @@
     <meta charset="UTF-8" />
     <title>RPass</title>
 
-    <link rel="stylesheet" href="page-login.css" />
+    <link rel="stylesheet" href="page-createuser.css" />
     <link rel="stylesheet" href="../others/element-dash.css" />
     <link rel="stylesheet" href="../others/theme-light.css" />
 
     <link rel="stylesheet" href="../others/elem-title-Big.css" />
-    <link rel="stylesheet" href="../others/elem-squares.css" />
-    <link rel="stylesheet" href="../element-textbox/elem-txtbx-Classic.css" />
+    <link rel="stylesheet" href="../others/elem-title-Sub.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
+    <link rel="stylesheet" href="../others/elem-squares2.css" />
 
     <script defer src="../element-dashstart/element-dashstart.js"></script>
-    <script defer src="page-login.js"></script>
+    <script defer src="page-createuser.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
-  <body onload="Interface_Page_Login(1)">
+  <body onload="Interface_Page_CreateUser(1)">
     
-    <div class="contents-page1">
-      <div class="sq-downright">
-        <div class="square5">
-          <div class="square-badge2">log</div>
-        </div>
+    <div class="contents-page2">
+      <div class="contents2">
 
-        <div class="square6">
-          <div class="square-badge2">in</div>
-        </div>
+        <div class="elem-title-Big">New account</div> <br>
+
       </div>
 
-      <div class="contents1">
-
-        <div class="elem-title-Big" style="text-align: center;">Login</div> <br>
-
-        <div class="elem-txtbx-Classic-FORM" style="z-index: 9;">
-          <input class="elem-txtbx-Classic-TEXT" type="text" id="username" autocomplete="off" placeholder=" ">
-          <label class="elem-txtbx-Classic-LABEL">Username</label>
+      <div class="sq-center">
+        <div class="square2">
+          <div class="square-badge1">RPass</div>
+        </div>
+    
+        <div class="square1">
+          <h2>One account for all your passwords, stored locally</h2>
         </div>
 
-        <div class="elem-txtbx-Classic-FORM" style="z-index: 8;">
-          <input class="elem-txtbx-Classic-TEXT" type="password" id="username" autocomplete="off" placeholder=" ">
-          <label class="elem-txtbx-Classic-LABEL">Password</label>
+        <div class="square4">
+          <div class="square-badge2">ss//</div>
         </div>
 
-        <div class="elem-btn-ClassicRBlue-FORM" style="z-index: 7;">
-          <button class="elem-btn-ClassicRBlue-BUTT" onclick="Login()" id="button--login-login">Log in</button>
+        <div class="square3">
+          <h2>With strong <br> password encryption, simple and flexible</h2>
+        </div>
+      </div>  
+
+      <div class="contents21">
+
+        <div class="elem-btn-ClassicRBlue-FORM">
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="Continue()" id="button--createuser-continue">Continue</button>
         </div>
 
       </div>
@@ -58,13 +60,13 @@
   </body>
   <body1>
     
-    <div class="dash">
+    <div>
       <div class="navigation">
           <div>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </div>
           <ul>
     
-            <li class="list1 active1">
-              <a onclick="ChangePage(1);Interface_Page_Login(0);">
+            <li class="list1" id="login">
+              <a onclick="ChangePage(1);Interface_Page_CreateUser(0);">
                 <span class="icon">
                   <ion-icon name="log-in-outline"></ion-icon>
                 </span>
@@ -72,8 +74,8 @@
               </a>
             </li>
             
-            <li class="list1">
-              <a onclick="ChangePage(2);Interface_Page_Login(0);">
+            <li class="list1 active1">
+              <a onclick="ChangePage(2);Interface_Page_CreateUser(0);">
                 <span class="icon">
                   <ion-icon name="person-add-outline"></ion-icon>
                 </span>
@@ -82,7 +84,7 @@
             </li>
     
             <li class="list1">
-              <a onclick="ChangePage(3);Interface_Page_Login(0);">
+              <a onclick="ChangePage(3);Interface_Page_CreateUser(0);">
                 <span class="icon">
                   <ion-icon name="settings-outline"></ion-icon>
                 </span>
@@ -105,7 +107,7 @@
           list1.forEach((item) =>
           item.addEventListener('click',activeLink1));
         </script>
-    </div>  
+      </div>
 
   </body1>
 </html>

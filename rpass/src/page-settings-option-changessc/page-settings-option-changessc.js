@@ -35,14 +35,14 @@ const form__changessc_3 = document.querySelector('#changessc--ssc-3');
 const form__changessc_4 = document.querySelector('#changessc--ssc-4');
 const form__changessc_5 = document.querySelector('#changessc--ssc-5');
 const form__changessc_6 = document.querySelector('#changessc--ssc-6');
-const form__changessc_7 = document.querySelector('#changessc--ssc-7');  
+const form__changessc_7 = document.querySelector('#changessc--ssc-7');
 const form__changessc_8 = document.querySelector('#changessc--ssc-8');
 
 function Clear() {
     // Lose focus
     setTimeout(() => {
-    const button__resetssc_clear = document.querySelector('#button--changessc-clear');
-    button__resetssc_clear.blur();
+    const button__changessc_clear = document.querySelector('#button--changessc-clear');
+    button__changessc_clear.blur();
     }, 200);
     // Function
     form__changessc_1.value = "";

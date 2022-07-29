@@ -10,7 +10,7 @@ function ChangePage(pageNumber) {
                 window.location.href = "../page-login/page-login.html";
             } else if (pageNumber == 2) {
                 distroyed = 0;
-                window.location.href = "../page-eula/page-eula.html";
+                window.location.href = "../page-createuser/page-createuser.html";
             } else if (pageNumber == 3) {
                 distroyed = 0;
                 window.location.href = "../page-settingsdefault/page-settingsdefault.html";

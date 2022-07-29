@@ -20,11 +20,20 @@ function Interface_Page_SettingsAdvanced(x) {
         }
 }
 
-function LocalReset() {
+function Execute() {
     // Lose focus
     setTimeout(() => {
-    const button__localreset_reset = document.querySelector('#button--localreset-reset');
-    button__localreset_reset.blur();
+    const button__terminal_execute = document.querySelector('#button--terminal-execute');
+    button__terminal_execute.blur();
+    }, 200);
+    // Function
+}
+
+function Toggle() {
+    // Lose focus
+    setTimeout(() => {
+    const button__terminal_toggle = document.querySelector('#button--terminal-toggle');
+    button__terminal_toggle.blur();
     }, 200);
     // Function
 }

@@ -53,6 +53,10 @@ function OptionLocalReset() {
     button__settingsadvanced_localreset.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsAdvanced(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-resetlocal/page-settings-option-resetlocal.html";
+     }, 500);
 }
 
 function OptionTerminal() {
@@ -62,4 +66,8 @@ function OptionTerminal() {
     button__settingsadvanced_terminal.blur();
     }, 200);
     // Function
+    Interface_Page_SettingsAdvanced(0);
+    setTimeout(() => { 
+        window.location.href = "../page-settings-option-terminal/page-settings-option-terminal.html";
+     }, 500);
 }

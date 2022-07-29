@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../others/theme-light.css" />
 
     <link rel="stylesheet" href="../others/elem-title-Big.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-ClassicRBlue.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicGreen.css" />
     <link rel="stylesheet" href="../element-button/elem-btn-ClassicRed.css" />
 
@@ -40,6 +41,10 @@
           <button class="elem-btn-ClassicGreen-BUTT" onclick="Agree()" id="button--eula-agree">Agree</button>
         </div>
 
+        <div class="elem-btn-ClassicRBlue-FORM">
+          <button class="elem-btn-ClassicRBlue-BUTT" onclick="About()" id="button--eula-about">View License</button>
+        </div>
+
         <div class="elem-btn-ClassicRed-FORM">
           <button class="elem-btn-ClassicRed-BUTT" onclick="Disagree()" id="button--eula-disagree">Disagree</button>
         </div>
@@ -69,11 +74,11 @@
                 <span class="icon">
                   <ion-icon name="person-add-outline"></ion-icon>
                 </span>
-                <span class="text">Create user</span>
+                <span class="text">EULA</span>
               </a>
             </li>
     
-            <li class="list1">
+            <li class="list1" id="about">
               <a onclick="ChangePage(3);Interface_Page_Eula(0);">
                 <span class="icon">
                   <ion-icon name="settings-outline"></ion-icon>

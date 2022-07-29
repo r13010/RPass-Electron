@@ -14,6 +14,10 @@ function Agree() {
     button__eula_agree.blur();
     }, 200);
     // Function
+    Interface_Page_Eula(0);
+    setTimeout(() => {
+        window.location.href = "../page-createuser-stage-1/page-createuser-stage-1.html";
+    }, 500);
 }
 
 function Disagree() {
@@ -33,5 +37,25 @@ function Disagree() {
     // Redirect
     setTimeout(() => {
         window.location.href = "../page-login/page-login.html";
+    }, 500);
+}
+
+function About() {
+    // Lose focus
+    setTimeout(() => {
+    const button__eula_about = document.querySelector('#button--eula-about');
+    button__eula_about.blur();
+    }, 200);
+    // Function
+    Interface_Page_Eula(0);
+    const list = document.querySelectorAll('.list1');
+    const about = document.querySelector('#about');
+    // Set Settings Tab as active
+    list.forEach((item) =>
+    item.classList.remove('active1'));
+    about.classList.add('active1');
+    // Redirect
+    setTimeout(() => {
+        window.location.href = "../page-settings-option-about/page-settings-option-about.html";
     }, 500);
 }

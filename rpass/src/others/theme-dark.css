@@ -15,4 +15,7 @@
   
     --advanced: rgb(78, 0, 100);
     --gradientadvanced: linear-gradient(90deg, rgb(196, 58, 235) 35%,rgb(203, 122, 225) 100%);
-}
+
+    --badgefade1: linear-gradient(-100deg, #282828 35%,black 100%);
+    --badgefade2: linear-gradient(100deg, #282828 35%,black 100%);
+} 

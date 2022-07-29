@@ -1,0 +1,74 @@
+.square1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.square2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 40px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.square2:hover {
+    bottom: 10px;
+}
+
+.square3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.square4 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 40px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.square4:hover {
+    top: -10px;
+}
+
+.square-badge1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
+    background-image: var(--badgefade1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.square-badge2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
+    background-image: var(--badgefade2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sq-center {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
