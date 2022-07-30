@@ -5,11 +5,13 @@
     <title>RPass</title>
 
     <link rel="stylesheet" href="page-dashboard.css" />
+    <link rel="stylesheet" href="element-passwordlist.css" />
     <link rel="stylesheet" href="../others/element-dash.css" />
     <link rel="stylesheet" href="../others/theme-light.css" />
     
     <link rel="stylesheet" href="../others/elem-title-Big.css" />
-
+    <link rel="stylesheet" href="../others/elem-squares.css" />
+    <link rel="stylesheet" href="../element-button/elem-btn-Square.css" />
     <script defer src="../element-dashboard/element-dashboard.js"></script>
     <script defer src="page-dashboard.js"></script>
 
@@ -18,18 +20,48 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
   </head>
-  <body onload="Interface_Page_Dashboard(1)">
+  <body onload="Interface_Page_Dashboard(1);ScrollControl();">
     
     <div class="contents-page2">
+      <div class="sq-downright">
+        <div class="square5">
+          <div class="square-badge1">das</div>
+        </div>
+
+        <div class="square6">
+          <div class="square-badge2">hbo</div>
+        </div>
+      </div>
+
       <div class="contents2">
 
         <h1 class="elem-title-Big" style="z-index: 10;">Dashboard</h1> <br>
 
-        here comes the password list
+        <div class="password-list">
+          <ul id="pass-list">
+
+            <li>
+              <a>
+                <span class="text" onclick="AddPassword();setTimeout(() => { this.blur(); }, 200);" tabindex="1">Add a new password</span>
+                
+                <span class="icon1" onclick="AddPassword();setTimeout(() => { this.blur(); }, 200);" tabindex="1">
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
 
       </div>
-    </div>
+      <div class="contents21">
 
+        <div class="elem-btn-Square-FORM">
+          <button class="elem-btn-Square-BUTT" onclick="ScrollTop()" id="button--dashboard-top"> <ion-icon name="chevron-up-outline"></ion-icon> </button>
+        </div>
+        
+      </div>
+    </div>
   </body>
   <body1>
     

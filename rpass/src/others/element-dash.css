@@ -9,7 +9,16 @@
 /* */
 
 body {
-    background: var(--backg);
+  background: var(--backg);
+}
+
+body::-webkit-scrollbar {
+  width: 1.5px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--backg1);
+  border-radius: 10px;
 }
 
 .dash {
