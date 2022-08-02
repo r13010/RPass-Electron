@@ -46,4 +46,5 @@
 
 .elem-btn-BigNRound-LABEL {
     font-weight: bold;
+    word-wrap: break-word;
 }

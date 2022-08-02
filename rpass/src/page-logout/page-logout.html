@@ -15,6 +15,7 @@
 
     <script defer src="../element-dashboard/element-dashboard.js"></script>
     <script defer src="page-logout.js"></script>
+    <script defer src="../functions/rpass_lang.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -36,7 +37,7 @@
 
       <div class="contents2">
 
-        <h1 class="elem-title-Big" style="z-index: 10;">Log out</h1> <br>
+        <h1 class="elem-title-Big" style="z-index: 10;" id="string_onpage_logout1">Log out</h1> <br>
 
       </div>
 
@@ -45,21 +46,21 @@
         <div class="elem-btn-BigNRound-FORM">
           <button class="elem-btn-BigNRound-BUTT" onclick="Save()" id="button--logout-save">
             <ion-icon class="elem-btn-BigNRound-ICON" name="document-attach-outline"></ion-icon> <br>
-            <div class="elem-btn-BigNRound-LABEL">Save</div>
+            <div class="elem-btn-BigNRound-LABEL" id="string_onpage_save1">Save</div>
           </button>
         </div>
 
         <div class="elem-btn-BigNRound-FORM">
           <button class="elem-btn-BigNRound-BUTT" onclick="SaveAndLogout()" id="button--logout-save-and-logout">
             <ion-icon class="elem-btn-BigNRound-ICON" name="document-text-outline"></ion-icon> <br>
-            <div class="elem-btn-BigNRound-LABEL">Save and <br> log out</div>
+            <div class="elem-btn-BigNRound-LABEL" id="string_onpage_saveandlogout1">Save and log out</div>
           </button>
         </div>
 
         <div class="elem-btn-BigNRoundRed-FORM">
           <button class="elem-btn-BigNRoundRed-BUTT" onclick="Logout()" id="button--logout-logout">
             <ion-icon class="elem-btn-BigNRoundRed-ICON" name="log-out-outline"></ion-icon> <br> 
-            <div class="elem-btn-BigNRoundRed-LABEL">Log out</div>
+            <div class="elem-btn-BigNRoundRed-LABEL" id="string_onpage_logout3">Log out</div>
           </button>
         </div>
 
@@ -78,7 +79,7 @@
               <span class="icon">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
-              <span class="text">Dashboard</span>
+              <span class="text" id="string_onpage_dashboard1">Dashboard</span>
             </a>
           </li>
           
@@ -87,7 +88,7 @@
               <span class="icon">
                 <ion-icon name="add-outline"></ion-icon>
               </span>
-              <span class="text">Add</span>
+              <span class="text" id="string_onpage_add1">Add</span>
             </a>
           </li>
     
@@ -96,7 +97,7 @@
               <span class="icon">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
-              <span class="text">Profile</span>
+              <span class="text" id="string_onpage_profile1">Profile</span>
             </a>
           </li>
     
@@ -105,7 +106,7 @@
               <span class="icon">
                 <ion-icon name="settings-outline"></ion-icon>
               </span>
-              <span class="text">User settings</span>
+              <span class="text" id="string_onpage_usersettings1">User settings</span>
             </a>
           </li>
     
@@ -114,7 +115,7 @@
               <span class="icon">
                 <ion-icon name="log-out-outline"></ion-icon>
               </span>
-              <span class="text">Log out</span>
+              <span class="text" id="string_onpage_logout2">Log out</span>
             </a>
           </li>
           
